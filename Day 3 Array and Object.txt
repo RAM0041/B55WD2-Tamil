@@ -1,0 +1,89 @@
+Day - 3
+
+// Primitive Data types
+// Inbuilt data types
+Number, String, boolean
+// Number: includes decimal
+// String: Characters
+// Boolean: true or false
+
+// Complex Data types
+// Array and Object
+
+Array name is the starting address of the array
+Example:
+var arr = [1,2,3,4];
+//         0,1,2,3
+console.log(arr.length);
+arr[100] = 5;
+
+// Objects:
+1. Object are a structure of Key:Value Pair
+Syntax: var objectName = { key: value};
+
+// Object name is also called as the reference name
+// Object don't have index
+
+Example:
+var person = {
+    name: "John",
+    age: 27,
+    gender: "male",
+    course: "FSD",
+    mobile: 94
+}
+
+// Accessing the elements inside the object
+// we can access the element of the object using keyname
+// Dot Method (.)
+// Syntax: ObjName.keyName
+
+console.log(person.gender);
+console.log(person.name);
+
+// 2nd Method: box method
+// Syntax: ObjName["KeyName"];
+
+console.log(person["course"]);
+
+// Applicable in looping
+// Printing the objects
+// For-in loop
+// It is applicable only for object
+// Syntax: for(var key in ObjName){Statement to be executed;}
+
+var person = {
+    name: "John",
+    age: 27,
+    gender: "male",
+    course: "FSD",
+    mobile: 94
+}
+
+console.log(person["name"]);
+
+for(var a in person){
+   console.log(a, person[a]); 
+}
+
+// Task: FirstName, LastName, Batch, Course - obj - print(both key and value)
+
+// Insertion
+// Here a new k:v pair will be added at the end of the line
+// Syntax: ObjName.KeyName = value;
+// Example
+person.email = "fsd55wd2tamil@gmail.com";
+console.log(person);
+
+// Updation:
+// it will be applicable for the key which is already present
+// Syntax: ObjName.keyName = value;
+// Example:
+person.lastName = "Das";
+console.log(person);
+
+// Delete
+// Syntax: delete objName.keyName
+// Example
+delete person.batch;
+console.log(person);
