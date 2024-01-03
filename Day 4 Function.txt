@@ -1,0 +1,50 @@
+Day 4 - Function
+
+Function:
+- to perform particular task
+- to avoid repetation of code
+- return: to get the values outside of the function.
+- inside function paranthesis is called function parameter
+- while calling function paranthesis inside value are argument.
+
+1. Anonymous Function
+// Syntax: var functionName = function(){return};
+// here function is stored in the variable
+// use cases: for most of the events.
+
+Example:
+var add = function(a,b){
+return a + b;
+}
+console.log(add(5,4));
+
+// Task: Multiply(Use Anonymous Func)
+
+2. Immediately Invoked Function Execution(IIFE):
+// Syntax: (function FunctionName(){})();
+- Immediately delete the values after using because it has limited memory space.
+
+Example:
+(function mul(a,b){
+  console.log(a*b);
+})(2,4);
+
+3. Arrow Function:
+// ES6 Version
+- to reduce the code length
+- having single statement
+
+// Syntax: var variableName = (parameter)=>{}
+
+Example:
+var add = (a,b) =>{
+return a+b;
+}
+console.log(add(2,4));
+
+Example:
+var add = () =>{
+console.log("Hello world");
+}
+
+add();
