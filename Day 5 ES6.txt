@@ -1,0 +1,106 @@
+Day 5 - ES6
+let and const it is called as blocked scope variable.
+var is a global and functional scope.
+
+const: constant value
+Example: const
+const PI = 3.14;
+const Days = 7;
+console.log(PI);
+
+Example: let
+let x = 17;
+if(true){
+    let x = 27;
+    console.log(x);
+}
+console.log(x);
+
+Example: var
+var x = 17;
+if(true){
+    var x = 27;
+    console.log(x);
+}
+console.log(x);
+
+Spread Operator:
+// Syntax: ...
+// Application: expanding the array
+// it is applicable of string or an array
+Example: Array
+var arr = ["55WD2T", 54, "Thiru"];
+console.log(...arr);
+
+Example: string
+var arr = "Welcome";
+var str = [...arr]
+console.log(str);
+
+Combining the Array:
+Example:
+var arr1 = [1,2,3,4,5];
+var arr2 = [6,7,8,9,10];
+var res = [...arr1, ...arr2];
+console.log(res);
+
+
+Destructuring the Array:
+// Destructuring is unpacking the array element into a bunch of variable.
+Example: 
+let arr = ["leo", "das"];
+let a = arr[0];
+let b = arr[1];
+let [s1,s2] = arr;
+console.log(s1);
+console.log(s2);
+
+// Destructuring Object:
+Example:
+var obj = {
+    firstName: "thiru",
+    age: 17,
+    city: "chennai"
+}
+
+var { firstName, age, city} = obj;
+console.log(city);
+
+Task:
+var a = 34;
+var b = 40;
+
+output:
+The sum of a and b is
+74
+
+Template literals:
+// help us to make the concatenation inside the output
+// statement much effective
+Example:
+var a = 35;
+var b = 34;
+// Backtick - on keyboard below ESC Button
+console.log(`The sum of a and b is
+${a+b}`);
+Task:
+function sum(a,b){
+
+}
+sum(1,2);
+sum(1,2,3,4)
+
+// Rest Operator
+function add(...a){
+    // a is called as rest parameter
+    // it is undefined
+    // rest parameter is nothing but an array
+    let sum = 0;
+    for(var i=0; i<a.length; i++){
+        sum = sum+a[i];
+    }
+    return sum;
+}
+console.log(add(1,2,3));
+
+
