@@ -1,0 +1,63 @@
+Copy by value
+it is applicable to the Primitive Data types
+
+Example:
+var a = 7;
+var b = a;
+var a = 8;
+var a = 9;
+console.log(a, b);
+
+Copy by Reference
+it is applicable for the complex data types
+
+var arr = [4,5,6];
+var res = arr;
+console.log(res);
+
+Function:
+
+function add(a, b){
+    return a + b;
+}
+
+console.log(add(2,3));
+
+// Task: Multiply: 2 3 = 6
+
+// JSON - Javascript Object Notation
+// API - Application Programming Interface
+
+var arr = [{
+    "name": "John",
+    "age": "30"},
+    {"name":"Doe",
+      "age": "17"
+    }];
+
+console.log(arr[1].name);
+
+Example:
+
+// XML HTTP Request: it is used to interact with servers via API.
+// Why: to get the data from the Server via API
+
+// Step 01: Create a XHR Object
+// var variableName = userdefined your choice
+var request = new XMLHttpRequest();
+// Step 02: Specify the API
+request.open("GET", "https://restcountries.com/v2/all");
+// Step 03: Sending the Request
+request.send();
+// Step 04: Once requested data is there in server once data is successfully loaded,,
+// Server response will be of 200 status code.
+request.onload = function(){
+    var result = JSON.parse(request.response);
+    console.log(result);
+    // whatever conversion has to be done here only
+    // not outside
+}
+
+// inside the function: we are converting the data from server to client
+// which is in string -> object
+

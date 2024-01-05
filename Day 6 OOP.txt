@@ -1,0 +1,85 @@
+Day 6 - OOP 
+
+Class & Object
+this keyword
+small structure
+
+class: it is the template which consist of collection of properties, methods...obj etc.
+
+Object: it is a real time entity.
+
+OOP: Abstraction, Encapsulation, Inheritance, Polymorphism.
+
+How to write class?
+// class is a keyword
+// ClassName is the name of the class
+
+Syntax:
+class Car{
+
+}
+
+Example:
+class Car{
+    constructor(name, color){
+        this.name = name;
+        this.color = color;
+    }
+}
+
+// var variable name = new ObjName
+var car1 = new Car("BMW", "white");
+
+// New: is a keyword which is create a new Object.
+
+// this: is the keyword pointing the new object.
+
+// constructor: it is the special way of assigning the values of object.
+
+Task: Mobile(class) - name, ram 
+
+Example:
+
+class Car{
+    constructor(name, color){
+        this.name = name;
+        this.color = color;
+    }
+}
+
+// An Object can have multiple references
+var car1 = new Car("BMW", "white");
+var car2 = car1;
+console.log(car2.name);
+
+Example:
+
+class Car{
+    constructor(name, color){
+        this.name = name;
+        this.color = color;
+    }
+    //Method Name here we call it as method as function - GET METHOD
+    getName(){
+       return `The Car Name is ${this.name}`
+    }
+}
+
+var car1 = new Car("BMW", "white");
+console.log(car1.getName());
+
+Example:
+class Car{
+    constructor(name, color){
+        this.name = name;
+        this.color = color;
+    }
+    // Setter - Updating the values of an Object
+    set changeName(modifiedName){
+        this.color = modifiedName;
+    }
+}
+
+var car1 = new Car("BMW", "white");
+car1.changeName = "Green";
+console.log(car1.color);
