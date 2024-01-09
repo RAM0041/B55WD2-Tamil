@@ -1,0 +1,82 @@
+HTML - Day 1
+
+HTML - Hyper Text Markup Language
+HTML vs HTML5
+HTML Tags:
+Head Tag: Meta Tag: information about the document
+Body Tag: Contains all of your element
+
+Heading Tag: h1...h6
+Element: tag + content
+
+Example: <h1>Hello World</h1>
+above one is called Element.
+
+P tag: stands for Paragraph
+
+To redirect the document, we use a tag/anchor tag.
+
+Example:
+<a href="https://www.guvi.in/">Guvi Website link</a>
+href: attribute
+attribute: it gives the additional information about the tag.
+href: represent the link where it has to be redirected.
+target: help us to open the document on new tab.
+Example:
+<a href="https://www.guvi.in/" target="_blank">Guvi Website link</a>
+
+Span:
+Example:
+<h2>Reputed Edtech platform for <span style="color: #0dba4b;"> Vernacular Languages</span></h2>
+
+Image Tag:
+Example:
+<img src="./images/download.jpg" alt="Reference Image">
+Example:
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjRnxbblglpGd_q6ziuedeiuwgcdeifg3" alt="Reference Image">
+
+Br tag: Break
+
+Example:
+Order list:
+li: list
+ <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ol>
+
+Unorder list:
+        <ul>
+            <li>Heading Tag</li>
+            <li>A Tag</li>
+            <li>P tag</li>
+            <li>br tag</li>
+            <li>span tag</li>
+        </ul>
+
+Task: Resume
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
