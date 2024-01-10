@@ -1,0 +1,91 @@
+Day 9 - CSS
+
+CSS - Cascading Style Sheet
+Why: to add customized to the website.
+HTML 4:
+div: stands for division/particular section in the document.
+
+self closing as well as non-self closing tag.
+self closing tag: br, img, meta
+closing tag: div, span, p....
+
+HTML 5: Sematic tags
+Header, Nav, Main, Section, Article, Aside, Footer.
+
+inline css: represent inside the tag.
+Note: for a single element
+Example:
+ <h1 style="color: brown; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">FSD55WD2-Tamil</h1>
+
+Task:
+Header - Resume Title
+Main - Your Name
+Section - school, clg
+Article - tell me about yourself
+footer - contact , github, linkedin, mail, ph
+
+Internal CSS:
+it is applicable for the html document.
+it is applied using style tag inside the head tag.
+
+Example:
+<style>
+        h1{
+            color: brown;
+            text-align: center;
+        }
+</style>
+
+Selector:
+
+class - .
+id  - #
+tag Selector - p
+
+Class - .:
+.heading-style{
+            color: brown;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+class selector can be applicable for more than one element.
+syntax: .className
+use the attribute called class
+
+Note: for a single element you can apply internal as well as inline css.
+inline css > internal css
+
+Id - #:
+#main{
+            color: aqua;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+inline > id > class > tag
+
+Tag:
+p{
+            color: yellow;
+            text-align: end;
+        }
+
+External CSS:
+
+Example:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 9 - HTML & CSS</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+  
+ <h1>FSD55WD2-Tamil</h1>
+<h1>welcome</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, facilis?</p>
+</body>
+</html>
