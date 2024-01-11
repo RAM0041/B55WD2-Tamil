@@ -1,0 +1,70 @@
+Day 10 - CSS
+
+Box Model:
+it is a box that is wrapped around an every HTML element.
+it consist of
+Margin, Padding, Border
+
+margin-top: 150px;
+margin-left: 30px;
+
+to avoid above scenerio we use short hand notation
+all the sides we can write it on single line
+margin apply values in clockwise sides
+
+Example:
+margin: 150px 0px 10px 35px;
+        top   ryt  btm lft
+
+Border:
+
+Example:
+border: 10px solid black;
+
+Example:
+border-bottom-color: green;
+border-bottom-width: 3px; 
+border-bottom-style: solid;
+
+Border Radius:
+Example:
+border-radius: 10px;
+
+Position Property:
+need: even through if you have top, left, right, botton which can be used to place/align the element in the web page.
+1. Static
+2. Relative
+3. Absolute
+4. Fixed
+5. Sticky
+
+1. Static: they are not affected by top, left, right or bottom.
+        by default all the html elements are positioned static.
+
+2. Relative: they are affected by top, left, bottom or right.
+
+3. Absolute: they are affected by top, left, bottom or right.
+             it will affect the document flow.
+
+Pseudo classes: hover, active, visited, link
+
+-- hover
+a:hover{
+    text-decoration: underline;
+}
+
+-- active
+a:active{
+    text-decoration: underline;
+    color: yellow;
+}
+
+-- visited
+a:visited{
+    color: pink;
+}
+
+-- unvisited
+a:unvisited{
+    color: pink;
+}
