@@ -32,6 +32,53 @@ Media Query:
             CSS Code for Mobile devices
            }
 
+@import url('https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+*{
+    font-family: 'Afacad', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background-color: blue;
+    height: 100px;
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        background-color: red;
+        height: 200px;
+    }
+}
+
+Example:
+
+div class="container">
+    <div class="child-1">
+        <img src="https://www.guvi.in/web-build/images/women1.555f1fd9c475b67115ac2a2d120a84e8.webp" alt="">
+    </div>
+    <div class="child-2">
+        <h1>Reputed Edtech platform for  <br>Vernacular Languages</h1>
+        <p>GUVI is an IIT-M & IIM-A incubated Ed-tech company that focuses on providing personalized learning solutions for its learners right from online learning, upskilling & recruitment opportunities in world-class quality. And, bestow tech-skills with the comfort of your native language.</p>
+    </div>
+</div>
+
+Style.css
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid black;
+}
+
+.child-1{
+    flex-basis: 50%;
+}
+.child-2{
+    flex-basis: 50%;
+}
+
+
 Bootstrap:
 
 Bootstrap Website Link: https://getbootstrap.com/docs/4.6/getting-started/introduction/
