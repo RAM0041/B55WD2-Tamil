@@ -1,0 +1,46 @@
+Flex Box
+* Flexible Box
+* One dimensional layout model
+
+Container Property:
+display, flex-direction, flex-wrap, row-gap, column-gap,
+justify-content, align-item, align-content.
+
+Example:
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid black;
+    justify-content: center; -> x axis
+    align-content: center; -> y axis
+    align-item: center; -> y axis
+}
+
+Item-property:
+Order, flex-grow, flex-basics, align-self.
+
+Font: https://fonts.google.com/
+
+Flex Practice: https://flexboxfroggy.com/
+
+Media Query:
+           it is called RWD,
+           Responsive Web Design.
+           Syntax:
+           @media screen and (max-width: 500px){
+            CSS Code for Mobile devices
+           }
+
+Bootstrap:
+
+Bootstrap Website Link: https://getbootstrap.com/docs/4.6/getting-started/introduction/
+CDN Link: <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+CDN: Content Delivery Network
+
+Font Awesome:
+Website Link: https://cdnjs.com/libraries/font-awesome/4.7.0
+CDN Link: <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+Netlify: https://app.netlify.com/
+For Deployment
