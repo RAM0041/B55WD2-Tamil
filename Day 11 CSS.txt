@@ -1,0 +1,99 @@
+Day 11 - CSS
+
+Table:
+
+<thead> - table head
+<tr> - table row
+<th> - table head
+<tbody> - table body
+<td> - table data
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11 - HTML & CSS</title>
+</head>
+<style>
+    table,th,td{
+        border: 1px solid black;
+        text-align: center;
+    }
+</style>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Batch</th>
+            <th>Course</th>
+            <th>Mentor</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>John</td>
+            <td>B55WD2 T</td>
+            <td>FSD</td>
+            <td>Alice</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>B55WD2 T</td>
+            <td>FSD</td>
+            <td>Alice</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>B55WD2 T</td>
+            <td>FSD</td>
+            <td>Alice</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
+
+Overflow:
+1. Visible
+2. Hidden
+3. Scroll
+4. Auto
+
+Example:
+<style>
+    .main{
+        height: 200px;
+        padding: 12px;
+        background-color: gray;
+        overflow: auto;
+    }
+</style>
+<body>
+<div class="main">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus inventore deleniti rerum alias iste omnis eos officiis odit quasi, at, sed labore ratione architecto officia repellat quam nisi facere. Doloribus voluptatibus libero earum doloremque quaerat possimus error molestiae corporis nisi modi tempore saepe facere aspernatur recusandae blanditiis, animi in.Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus inventore deleniti rerum alias iste omnis eos officiis odit quasi, at, sed labore ratione architecto officia repellat quam nisi facere. Doloribus voluptatibus libero earum doloremque quaerat possimus error molestiae corporis nisi modi tempore saepe facere aspernatur recusandae blanditiis, animi in.Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus inventore deleniti rerum alias iste omnis eos officiis odit quasi, at, sed labore ratione architecto officia repellat quam nisi facere. Doloribus voluptatibus libero earum doloremque quaerat possimus error molestiae corporis nisi modi tempore saepe facere aspernatur recusandae blanditiis, animi in.Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus inventore deleniti rerum alias iste omnis eos officiis odit quasi, at, sed labore ratione architecto officia repellat quam nisi facere. Doloribus voluptatibus libero earum doloremque quaerat possimus error molestiae corporis nisi modi tempore saepe facere aspernatur recusandae blanditiis, animi in.Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus inventore deleniti rerum alias iste omnis eos officiis odit quasi, at, sed labore ratione architecto officia repellat quam nisi facere. Doloribus voluptatibus libero earum doloremque quaerat possimus error molestiae corporis nisi modi tempore saepe facere aspernatur recusandae blanditiis, animi in.</p>
+</div>
+
+Task: Bio Data, h:100px
+
+* Gradients: it help us to have the tansition linear and radical gradient.
+             linear gradient will have default flow of top to bottom.
+             radial gradient will have the circle inside the box.
+
+Syntax: background-image: linear-gradient(direction/angle, starting color,...ending color);
+                                           to right/120
+
+Example:
+<style>
+    .main{
+        height: 200px;
+        background-image: linear-gradient(to right, rgb(244, 105, 128) 70%, blue, yellow);
+    }
+</style>
+<body>
+<div class="main">
+</div>
+
+Task: radial gradient
