@@ -1,0 +1,57 @@
+DOM - Document Object Model
+
+ Step 1: create an HTML Element
+ Creating the HTML element dynamically
+ we have to use document.createElement(element name);
+ this is an inbuilt method
+ which takes element name as parameter
+var element = document.createElement("div");
+ O/P: <div></div>
+ Step 2: To Add Content
+ by using innerHTML
+element.innerHTML = "Hello EveryOne";
+ O/P: <div>Hello EveryOne</div>
+ Step 3: appending the element to the body of document
+document.body.append(element);
+
+// Task: <p>This is P Tag</p>
+
+More Details on Inner HTML.
+1. Content
+2. Nested Element
+an alternate to innerText
+innerText VS innerHTML
+innerHTML: access the html content inside an element.
+innerText: access the text content inside an element.
+
+Nested Element:
+var element = document.createElement("div");
+var span = document.createElement("span");
+span.innerHTML = "<p>Content</p>";
+element.append(span);
+document.body.append(element);
+
+O/P:<div><span><p>Content</p></span></div>
+
+* Attribute
+to give the Attribute of the element.
+setAttribute method
+it takes to parameter, first is Attribute Name, Attribute value
+both the values are string.
+
+<div class="container">Attribute</div>
+
+var element = document.createElement("div");
+element.setAttribute("class","container");
+element.innerText = "Attribute";
+document.body.append(element);
+
+Task: <p id="main">Attribute</p>
+
+Homework:
+<div class="container">
+        <div class="row">
+            <div class="col">Hello</div>
+        </div>
+    </div>
+ 
