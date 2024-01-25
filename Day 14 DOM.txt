@@ -1,0 +1,63 @@
+Day 14 - DOM
+
+// document.getElementById
+this method is applicable if you have id attribute in HTML Element.
+this Element must be in html file.
+extract here in js.
+it returns the html Element.
+
+Example:
+var element = document.getElementById("container");
+console.log(element);
+
+// document.getElementByClassName
+this method is applicable if you have class attribute in HTML Element.
+the output of the method is an array.
+
+Example:
+var element = document.getElementsByClassName("container");
+console.log(element);
+
+// document.getElementsByTagName
+this method is applicable if you have tag selector.
+output also will be an array.
+
+Example:
+var element = document.getElementsByTagName("p");
+console.log(element);
+
+// document.querySelector
+i need to extract the first occurrence of the html.
+will select the first occurrence of the html.
+it returns the html element.
+
+Example:
+var element = document.querySelector("p");
+console.log(element);
+
+// document.querySelectorAll
+i need to extract the first occurrence of the html.
+will select the all occurrence of the html.
+it returns the output in terms of an array.
+
+Example:
+var element = document.querySelectorAll("p");
+console.log(element);
+
+Task:
+b55wd2tamil@gmail.com - valid user - invalid user
+
+<label for="email">Email</label><br>
+    <input type="email" id="email"><br>
+     <button type="button" onclick="valid()">Submit</button>
+
+     
+function valid(){
+    // b55wd2tamil@gmail.com - valid user - invalid user
+    var res = document.getElementById("email").value;
+    if(res == "b55wd2tamil@gmail.com"){
+        console.log('Valid User');
+    }else{
+        console.log('Invalid User');
+    }
+}
