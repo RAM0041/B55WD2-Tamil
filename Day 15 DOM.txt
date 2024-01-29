@@ -1,0 +1,60 @@
+Day 15: DOM
+
+var button = document.createElement("button");
+button.setAttribute("type", "button");
+button.innerText = "Submit";
+document.body.append(button);
+
+// addEventListener
+// it takes 2 Parameter
+// First is the event name
+// Second is func that has to be executed
+button.addEventListener("click", verify);
+
+function verify(){
+    alert("Red Alert in Chennai Due to Javascript Class");
+}
+
+// Prompt
+function verify(){
+    var res = prompt("Enter Your Name");
+    var mul = res * 2;
+    console.log(mul);
+}
+
+// Task - Multi * 2
+
+// MouseOver
+var div = document.createElement("div");
+div.innerText = "Click";
+document.body.append(div);
+
+// addEventListener
+div.addEventListener("mouseover", ()=> div.style.backgroundColor="pink");
+
+
+Task: Text Color - Red
+
+// Confirm
+var button = document.createElement("button");
+button.setAttribute("type","button");
+button.innerText = "Confirm";
+document.body.append(button);
+
+button.addEventListener("click", dabba);
+
+function dabba(){
+    // Confirm: this is used for yes or no
+    // if yes means it return true
+    // if no means it return false
+    var res = confirm("Hey King you dropped this...👑");
+    console.log(res); 
+}
+
+// Emonji
+👑 - Windows key + ;
+
+Task link:
+HTML Forms: https://docs.google.com/document/d/1I8qIE7_ri5Q_1QqkxJ7rdlRmGnWWW7zCa7BXrwAi8hI/edit
+Calculator: https://docs.google.com/document/d/1VyZJG0KZAoZEs3h_lpP65XPekNqsbFp8bouOZSWsOTc/edit
+Pagination: https://docs.google.com/document/d/1O8yVCwB_GaY5rZK1_mNkZ9GeYJLeom_dYmcVN3Mb2ws/edit

@@ -8,4 +8,6 @@ Position Demo: https://positiondemo.netlify.app/ <br>
 
 Gradient Generator: https://cssgradient.io/, https://www.joshwcomeau.com/gradient-generator/, https://www.colorzilla.com/gradient-editor/ <br>
 
-Creating Resume, Image: https://www.canva.com/templates/
+Creating Resume, Image: https://www.canva.com/templates/ <br>
+
+Submission Form link: https://forms.gle/Yav53AybrdhCKJMM6
